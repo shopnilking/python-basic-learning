@@ -30,3 +30,23 @@
 
 # thislist = ["apple", "banana", "cherry"]
 # [print(x) for x in thislist]
+
+# thislist = ["apple", "banana", "cherry"]
+# for x in thislist:
+#     if 'a' in x:
+#         print("Yes, 'a' is in the {}".format(x))
+#     else:
+#         print("No, 'a' is not in the {}".format(x))
+
+# thislist = ["apple", "banana", "cherry"]
+# newList = []
+# for x in thislist:
+#     if 'a' in x:
+#         newList.append(x)
+
+# print(newList)
+
+# thislist = ["apple", "banana", "cherry"]
+# newList = [x for x in thislist if 'a' in x]
+
+# print(newList)
