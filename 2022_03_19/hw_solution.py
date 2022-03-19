@@ -8,18 +8,22 @@
 # input 5
 # * * * * *
 # * * * * *
-# * * * * * 
-# * * * * * 
+# * * * * *
+# * * * * *
 # * * * * *
 
 # n = int(input('Enter a number:'))
-# n=5
-# for x in range(1, n+1):
-# print *****
 
-
-
-n=5
+# Method 1
+n = int(input('Enter a number:'))
 for x in range(n):
-    for y in range (n):
-        print("*", end="")
+    for y in range(n):
+        if(y == n-1):
+            print("*")
+        else:
+            print("*", end=" ")
+
+# Method 2
+# n = 5
+# for x in range(n):
+#     print("* "*n)
