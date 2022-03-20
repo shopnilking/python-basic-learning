@@ -1,5 +1,5 @@
-number = 34
+number = int(input('Enter a number:'))
 if number % 2 == 0:
-    print("this number is Even")
+    print(str(number) + " is Even")
 else:
-    print("this number is odd")
+    print(str(number) + " is odd")
