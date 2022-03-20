@@ -19,3 +19,19 @@
 # Current Number 7 Previous Number  6  Sum:  13
 # Current Number 8 Previous Number  7  Sum:  15
 # Current Number 9 Previous Number  8  Sum:  17
+
+
+# n = int(input('Enter a number:'))
+# for x in range (n):
+#     for y in range (n):
+#         if (y== n-1):
+#             print ("*")
+#         else:
+#             print("*", end=" ")
+
+
+previous_number=0
+for current_number in range (10):
+    sum = previous_number + current_number
+    print("Current Number {} Previous Number  {}  Sum:  {}".format(current_number,previous_number,sum))
+    previous_number = current_number
