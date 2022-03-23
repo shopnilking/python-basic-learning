@@ -29,3 +29,8 @@ users = [
         'profession': 'engineer'
     },
 ]
+
+
+for x in users:
+    print(type(x))
+    
