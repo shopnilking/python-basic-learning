@@ -32,5 +32,5 @@ users = [
 
 
 for x in users:
-    print(type(x))
+    print(x['first_name'], x['last_name'], x['age'], x['profession'])
     
