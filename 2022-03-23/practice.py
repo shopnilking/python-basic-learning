@@ -33,4 +33,5 @@ users = [
 
 for x in users:
     print(x['first_name'], x['last_name'], x['age'], x['profession'])
+    print("This is {} {}. He is {} years old. He is a {}.".format("first name","last name","age","profession"))
     
