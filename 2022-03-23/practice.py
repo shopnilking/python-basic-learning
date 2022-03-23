@@ -30,8 +30,11 @@ users = [
     },
 ]
 
+vowels = ['a', 'e', 'i', 'o', 'u']
+profession_article = 'a'
+for user in users:
+    if user['profession'][0] in vowels:
+        profession_article = 'an'
 
-for x in users:
-    print(x['first_name'], x['last_name'], x['age'], x['profession'])
-    print("This is {} {}. He is {} years old. He is a {}.".format("first name","last name","age","profession"))
-    
+    print("This is {} {}. He is {} years old. He is {} {}.".format(
+        user['first_name'], user['last_name'], user['age'], profession_article, user['profession']))
