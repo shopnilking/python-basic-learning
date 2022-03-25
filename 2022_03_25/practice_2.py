@@ -7,25 +7,34 @@ users = [
     {
         'first_name': 'Michael',
         'last_name': 'Jordan',
-        'age': '35',
+        'age': 35,
         'profession': 'programmer'
     },
     {
         'first_name': 'John',
         'last_name': 'Rosales',
-        'age': '20',
+        'age': 20,
         'profession': 'student'
     },
     {
         'first_name': 'Mark',
         'last_name': 'Guillen',
-        'age': '30',
+        'age': 30,
         'profession': 'doctor'
     },
     {
         'first_name': 'KB',
         'last_name': 'Tonel',
-        'age': '27',
+        'age': 27,
         'profession': 'engineer'
     },
 ]
+
+
+for user in users:
+    vowels = ["a", "e", "i", "o" ,"u"]
+    profession_article = "a"
+    # if user["profession_arti"]
+    print("This is {} {}. He is {} years old. He is a {}.".format(
+        user["first_name"], user["last_name"], user["age"], user["profession"]))
+    print(user)
