@@ -30,16 +30,17 @@ users = [
     },
 ]
 
-# vowels = ["a", "e", "i", "o", "u"]
-# for user in users:
-#     profession_article = "a"
-#     if user["profession"][0] in vowels:
-#         profession_article = "an"
-#     print("This is {firstName} {lastName}. He is {age} years old. He is {article} {profession}.".format(
-#         lastName=user["last_name"], article=profession_article, firstName=user["first_name"], profession=user["profession"], age=user["age"]))
+vowels = ["a", "e", "i", "o", "u"]
+for user in users:
+    profession_article = "a"
+    if user["profession"][0] in vowels:
+        profession_article = "an"
+    if user['age'] < 30:
+        print("This is {firstName} {lastName}. He is {age} years old. He is {article} {profession}.".format(
+            lastName=user["last_name"], article=profession_article, firstName=user["first_name"], profession=user["profession"], age=user["age"]))
 
-n = 45
-if n > 30:
-    print("Old")
-else:
-    print("Young")
+# age_list = [15, 25, 35, 45, 15, 25, 55, 65, 15, 25, 35, 75, 85, 95]
+
+# for n in age_list:
+#     if n < 30:
+#         print("Young = {}".format(n))
