@@ -17,24 +17,23 @@ users = [
         'profession': 'student'
     },
     {
-        'first_name': 'Mark',
-        'last_name': 'Guillen',
-        'age': 30,
-        'profession': 'doctor'
-    },
-    {
         'first_name': 'KB',
         'last_name': 'Tonel',
         'age': 27,
         'profession': 'engineer'
     },
+    {
+        'first_name': 'Mark',
+        'last_name': 'Guillen',
+        'age': 30,
+        'profession': 'doctor'
+    },
 ]
 
-
+vowels = ["a", "e", "i", "o", "u"]
 for user in users:
-    vowels = ["a", "e", "i", "o" ,"u"]
     profession_article = "a"
     if user["profession"][0] in vowels:
         profession_article = "an"
-    print("This is {} {}. He is {} years old. He is {} {}.".format(
-        user["first_name"], user["last_name"], user["age"], profession_article, user["profession"]))
+    print("This is {firstName} {lastName}. He is {age} years old. He is {article} {profession}.".format(
+        lastName=user["last_name"], article=profession_article, firstName=user["first_name"], profession=user["profession"], age=user["age"]))
