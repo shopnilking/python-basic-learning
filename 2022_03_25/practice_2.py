@@ -34,7 +34,7 @@ users = [
 for user in users:
     vowels = ["a", "e", "i", "o" ,"u"]
     profession_article = "a"
-    # if user["profession_arti"]
-    print("This is {} {}. He is {} years old. He is a {}.".format(
-        user["first_name"], user["last_name"], user["age"], user["profession"]))
-    print(user)
+    if user["profession"][0] in vowels:
+        profession_article = "an"
+    print("This is {} {}. He is {} years old. He is {} {}.".format(
+        user["first_name"], user["last_name"], user["age"], profession_article, user["profession"]))
