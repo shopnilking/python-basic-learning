@@ -1,4 +1,7 @@
 text = "amar sonar bangla ami tomoay valobashi"
-result = ['amar', 'ami']
+# result = ['amar', 'ami']
 # first = ["amar", "sonar", "bangla", "ami", "tomoay", "valobashi"]
 # second = ["amar", "ami"]
+
+result = text.split()
+print (result)
